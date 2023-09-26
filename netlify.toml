@@ -1,0 +1,9 @@
+[build]
+  base = "src\index.js"
+  command = "npm install && node index.js"
+
+[context.production.environment]
+  NODE_ENV = "production"
+
+[context.deploy-preview.environment]
+  NODE_ENV = "development"
