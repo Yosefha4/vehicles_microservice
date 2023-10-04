@@ -73,11 +73,9 @@ const vehicleSchema = new mongoose.Schema({
     type: String,
     require: true,
   },
-  vehicleImages: [
-    {
-      type: String,
-    },
-  ],
+  vehicleImages: {
+    type: String,
+  },
   ownerPhoneNum: {
     type: String,
     require: true,
